@@ -28,3 +28,9 @@ My Hyprland+Waybar config.
 - Wallpaper: hyprpaper
 - Firefox Theming: catppuccin-mocha
 - GRUB: catppuccin-mocha
+
+### Preview
+  ![Screenshot](/images/start.jpg)
+  ![Screenshot](/images/themeA.jpg)
+  ![Screenshot](/images/themeB.jpg)
+  ![Screenshot](/images/themeC.jpg)
