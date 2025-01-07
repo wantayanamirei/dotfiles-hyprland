@@ -1,0 +1,190 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mode": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 0,
+    "modules-left": [
+        "memory",
+        "cpu",
+        "temperature",
+        "custom/themeA",
+        "custom/themeB",
+        "custom/themeC",
+        "hyprland/workspaces"
+    ],
+    "modules-center": ["hyprland/window", "tray"],
+    "modules-right": [
+        "clock",
+        "network",
+        "battery",
+        "backlight",
+        "cava",
+        "pulseaudio"
+    ],
+    "hyprland/window": {
+        "format": "󰣇 {initialTitle}",
+        "max-length": 18
+    },
+    
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate"
+        //"format": "{icon}",
+    },
+
+    "tray": {
+        "icon-size": 15,
+        "spacing": 10
+    },
+
+    "clock": {
+        "format": "{:%H:%M | %a %d %b}",
+        // "format": "{:%A    %B-%d-%Y    %I:%M:%S %p}",
+        // "interval": 1,
+        // "rotate": 0,
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "on-click-right": "mode",
+            "format": {
+                "months": "<span color='#a6adc8'><b>{}</b></span>",
+                "weekdays": "<span color='#a6adc8'><b>{}</b></span>",
+                "today": "<span color='#a6adc8'><b>{}</b></span>",
+                "days": "<span color='#555869'><b>{}</b></span>"
+            }
+        }
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
+        "on-click": "hyprshade toggle blue-light-filter-custom",
+        "on-click-right": "hyprshade toggle vibrance-custom", 
+        "on-click-middle": "hyprshade toggle invert-colors",    
+        "scroll-step": 1,
+        "min-length": 6,
+        "tooltip": false
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["󰂃", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "tooltip": false,
+        "format-muted": "  Muted",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 1",
+        "on-scroll-down": "pamixer -d 1",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["","", "", ""]
+        }
+    },
+    "cava": {
+        // "cava_config": "~/.config/cava/config",
+        "framerate": 144,
+        "autosens": 1,
+        "sensitivity": 2,
+        "bars": 14,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 10000,
+        "method": "pulse",
+        "source": "auto",
+        "stereo": false,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 0,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+           "on-click-right": "mode"
+        }
+    },
+    "memory": {
+        "states": {
+            "c": 90, // critical
+            "h": 60, // high
+            "m": 30 // medium
+        },
+        "interval": 10,
+        "format": "󰾆 {used}GB",
+        "format-m": "󰾅 {used}GB",
+        "format-h": "󰓅 {used}GB",
+        "format-c": " {used}GB",
+        "format-alt": "󰾆 {percentage}%",
+        "max-length": 10,
+        // "min-length": 5,
+        "tooltip": true,
+        "tooltip-format": "󰾆 {percentage}%\n {used:0.1f}GB/{total:0.1f}GB"
+    },
+
+    "cpu": {
+        "interval": 10,
+        "format": "󰍛 {usage}%",
+        "format-alt": "{icon0}{icon1}{icon2}{icon3}",
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+        "min-length": 4
+    },
+    "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 60,
+        "format-critical": " {temperatureC}°",
+        "format": " {temperatureC}°",
+        "on-click": "kitty bpytop"
+    },
+    "network": {
+        "tooltip": true,
+        "format-wifi": "  {essid}",
+        "format-ethernet": "󰈀 ",
+        "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
+        "format-linked": "󰈀 {ifname} (No IP)",
+        "format-disconnected": "󰖪 ",
+        "tooltip-format-disconnected": "Disconnected",
+        "format-alt": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
+        "interval": 2,
+        "on-click-right": "sh ~/.config/rofi/bin/network",
+        "on-click-middle": "sh ~/.config/waybar/scripts/zapret.sh"
+    },
+    "custom/themeA": {
+        "format": "●",
+        "tooltip": false,
+        "on-click": "sh ~/.config/hypr/scripts/themeA.sh"
+    },
+    "custom/themeB": {
+        "format": "■",
+        "tooltip": false,
+        "on-click": "sh ~/.config/hypr/scripts/themeB.sh"
+    },
+    "custom/themeC": {
+        "format": "▼",
+        "tooltip": false,
+        "on-click": "sh ~/.config/hypr/scripts/themeC.sh"
+    },
+}
