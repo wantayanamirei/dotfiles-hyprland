@@ -22,11 +22,11 @@ configuration {
 * {
     font:                        "Product Sans Bold 12";
     background:                  #000005;
-    background-alt:              #3f2e36;
+    background-alt:              #374230;
     foreground:                  #faf8ff;
-    selected:                    #bf5887;
-    active:                      #5fe6f5;
-    urgent:                      #b371f9;
+    selected:                    #437d8d;
+    active:                      #b25ff5;
+    urgent:                      #f971b7;
 }
 
 /*****----- Main Window -----*****/
@@ -70,7 +70,7 @@ inputbar {
     spacing:                     10px;
     padding:                     80px 60px;
     background-color:            @background;
-    background-image:            url("~/.config/rofi/images/rofiwallpaper.png", width);
+    background-image:            url("~/.config/rofi/images/rofiwallpaper3.png", width);
     text-color:                  @foreground;
     orientation:                 horizontal;
     children:                    [ "textbox-prompt-colon", "entry", "dummy", "mode-switcher" ];

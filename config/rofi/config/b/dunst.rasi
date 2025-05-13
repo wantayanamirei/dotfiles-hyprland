@@ -16,9 +16,9 @@ configuration {
 * {
     font:                        "Product Sans Bold 12";
     background:                  #000005;
-    background-alt:              #bf5887;
+    background-alt:              #3f2e36;
     foreground:                  #faf8ff;
-    selected:                    #7bc963;
+    selected:                    #bf5887;
     active:                      #5fe6f5;
     urgent:                      #b371f9;
 }

@@ -1,24 +1,11 @@
-/**
- *
- * Author : Aditya Shakya (adi1090x)
- * Github : @adi1090x
- * 
- * Rofi Theme File
- * Rofi Version: 1.7.3
- **/
-
-/*****----- Configuration -----*****/
-configuration {
-    show-icons:                 false;
-}
-
+2
 /*****----- Global Properties -----*****/
 * {
     font:                        "Product Sans Bold 12";
     background:                  #000005;
-    background-alt:              #423040;
+    background-alt:              #4b4837;
     foreground:                  #faf8ff;
-    selected:                    #e3d268;
+    selected:                    #bf5887;
     active:                      #f5ae5f;
     urgent:                      #f9f871;
 }
