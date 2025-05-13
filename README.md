@@ -1,6 +1,25 @@
 # brbrbr dotfiles brbrbr
 My Hyprland+Waybar config.
 
+### Preview
+  ![Screenshot](/images/start.jpg)
+  ![Screenshot](/images/themeA.jpg)
+  ![Screenshot](/images/themeB.jpg)
+  ![Screenshot](/images/themeC.jpg)
+
+### [Main color scheme](https://colorscheme.ru/#1w32mhhssw0w0)
+
+## Installation
+- `config` => `~/.config`
+- `local/bin` => `!/.local/bin`, all executable
+- Run `hyprctl setcursor Bibata-Modern-Classic 24`
+- Run `gsettings set org.gnome.desktop.interface cursor-theme Bibata-Modern-Classic` - to set cursor theme
+- Go to `/home/$USER/.config/hypr/scripts/` and set everything to executable.
+- Go to `/home/$USER/.config/rofi/bin/` and set everything to executable.
+- Go to `/home/$USER/.config/hyprpanel/scripts/` and set everything to executable.
+- Reboot
+- Profit(?)
+
 ### Apps
 - OS: ~~ArcoLinux~~ ArchLinux
 - WM: [Hyprland](https://github.com/hyprwm/Hyprland)
@@ -29,19 +48,10 @@ My Hyprland+Waybar config.
 - Firefox Theming: [dark vibes :D](https://addons.mozilla.org/ru/firefox/addon/dark-vibes)
 - GRUB: catppuccin-mocha
 
-### Preview
-  ![Screenshot](/images/start.jpg)
-  ![Screenshot](/images/themeA.jpg)
-  ![Screenshot](/images/themeB.jpg)
-  ![Screenshot](/images/themeC.jpg)
 
-## Installation
-- `config` => `~/.config`
-- `local/bin` => `!/.local/bin`, all executable
-- Run `hyprctl setcursor Bibata-Modern-Classic 24`
-- Run `gsettings set org.gnome.desktop.interface cursor-theme Bibata-Modern-Classic` - to set cursor theme
-- Go to `/home/$USER/.config/hypr/scripts/` and set everything to executable.
-- Go to `/home/$USER/.config/rofi/bin/` and set everything to executable.
-- Go to `/home/$USER/.config/hyprpanel/scripts/` and set everything to executable.
-- Reboot
-- Profit(?)
+### also useful
+- `pacman -S bpytop`
+- `pacman -S kitty`
+- `pacman -S imv`
+- `pacman -S vlc`
+  
