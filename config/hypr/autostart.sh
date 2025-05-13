@@ -48,8 +48,7 @@ hyprpaper &
 hyprpaper
 #hyprctl hyprpaper unload all
 
-
-
+hyprpm enable Hypr-DarkWindow
 
 
 
