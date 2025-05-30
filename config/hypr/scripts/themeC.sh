@@ -23,7 +23,7 @@ killall dunst
 dunstify "Theme successfully changed!" "Now you're motivated blue."
 
 #bds
-cp ~/.config/BetterDiscord/themes/c/DiscordRecolor.theme.css ~/.config/BetterDiscord/themes/DiscordRecolor.theme.css
+#cp ~/.config/BetterDiscord/themes/c/DiscordRecolor.theme.css ~/.config/BetterDiscord/themes/DiscordRecolor.theme.css
 
 #fastfetch
 cp ~/.config/fastfetch/c/config.jsonc ~/.config/fastfetch/config.jsonc 
