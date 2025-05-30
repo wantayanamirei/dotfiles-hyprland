@@ -1,26 +1,13 @@
-/**
- *
- * Author : Aditya Shakya (adi1090x)
- * Github : @adi1090x
- * 
- * Rofi Theme File
- * Rofi Version: 1.7.3
- **/
-
-/*****----- Configuration -----*****/
-configuration {
-    show-icons:                 false;
-}
-
+2
 /*****----- Global Properties -----*****/
 * {
     font:                        "Product Sans Bold 12";
     background:                  #000005;
-    background-alt:              #222c2f;
+    background-alt:              #4b4837;
     foreground:                  #faf8ff;
-    selected:                    #437d8d;
-    active:                      #b25ff5;
-    urgent:                      #f971b7;
+    selected:                    #bf5887;
+    active:                      #f5ae5f;
+    urgent:                      #f9f871;
 }
 
 /*
@@ -64,7 +51,7 @@ inputbar {
     border-radius:               40px;
     border-color:                @selected;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/images/rofiwallpaper3.png", width);
+    background-image:            url("~/.config/rofi/images/rofiwallpaper2.png", width);
     text-color:                  @foreground;
     children:                    ["prompt", "button-bluetooth"];
 }

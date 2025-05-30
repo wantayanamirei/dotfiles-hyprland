@@ -16,11 +16,11 @@ configuration {
 * {
     font:                        "Product Sans Bold 12";
     background:                  #000005;
-    background-alt:              #374230;
+    background-alt:              #423040;
     foreground:                  #faf8ff;
-    selected:                    #437d8d;
-    active:                      #b25ff5;
-    urgent:                      #f971b7;
+    selected:                    #e3d268;
+    active:                      #f5ae5f;
+    urgent:                      #f9f871;
 }
 
 /*
@@ -47,7 +47,7 @@ window {
     border-color:                @selected;
     cursor:                      "default";
 	background-color: 			 @background;
-    background-image:			 url("~/.config/rofi/images/rofiwallpaper3.png", height);
+    background-image:			 url("~/.config/rofi/images/rofiwallpaper2.png", height);
 }
 
 /*****----- Main Box -----*****/
