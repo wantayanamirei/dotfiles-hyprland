@@ -1,3 +1,0 @@
-#!/usr/bin/bash
-
-grim -g "$(slurp)" -t jpeg -q 100 - | wl-copy
